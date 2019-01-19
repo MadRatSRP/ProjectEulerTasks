@@ -5,8 +5,8 @@ public class Main {
     private static int sum = 0;
 
     public static void main(String[] args) {
-        printMultiplesOfThreeAndFiveFromTen();
-        printMultiplesOfThreeAndFiveFromOneHundred();
+        //printMultiplesOfThreeAndFiveFromTen();
+        //printMultiplesOfThreeAndFiveFromOneHundred();
         printMultiplesOfThreeAndFiveFromOneThousand();
     }
 
@@ -31,9 +31,11 @@ public class Main {
     public static void printMultiplesOfThreeAndFiveFromOneThousand() {
         for (int i = 1; i < 1000; i++) {
             if (i % 3 == 0 || i % 5 == 0) {
+                //System.out.print(i + "\n");
                 sum += i;
+                //System.out.print(sum + "\n");*/
             }
+            System.out.print(sum + "\n");
         }
-        System.out.print(sum + "\n");
     }
 }
